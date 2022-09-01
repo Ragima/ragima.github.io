@@ -34,7 +34,7 @@
   }
 
   &__play-button:hover {
-   box-shadow: 0 0 27px rgba(50, 57, 105, 0.8);
+   box-shadow: 0 0 27px $playBtnHover;
   }
 
   &__play-icon {
