@@ -13,7 +13,7 @@
     }
 
     &__title:not(:last-child) {
-        margin-bottom: 36px;
+        margin-bottom: 28px;
     }
 
     &__dotts {
@@ -23,6 +23,7 @@
     &__paragraph {
         color: $blackColor;
         opacity: 0.65;
+        line-height: 1.6rem;
     }
 
     &__paragraph:not(:last-child) {

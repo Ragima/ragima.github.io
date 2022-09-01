@@ -1,0 +1,13 @@
+.team {
+    background: url('../../images/bg/bgclients.jpg');
+    width: 100%;
+
+
+    &__team-list {
+        width: 65%;
+        margin: 0 auto;
+        padding: 6% 10%;
+        @include flex-block(row, space-between, center)
+    }
+
+}
