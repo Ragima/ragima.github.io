@@ -1,8 +1,8 @@
 .platforms {
-    @include flex-block(row, space-between, null);  
-    
+    @include flex-block(row, space-between, null);
+
     &__general-info {
-        padding: 7% 8%;
+        padding: 6% 10%;
         width: 40%;
     }
 

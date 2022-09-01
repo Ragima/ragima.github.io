@@ -1,0 +1,20 @@
+.feature {
+    @include flex-block(column, center, center);
+    max-width: 342px;
+
+    &__icon {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 22px;
+        margin-bottom: 19px;
+    }
+
+    &__description {
+        color: $blackColor;
+        opacity: 0.65;
+    }
+}

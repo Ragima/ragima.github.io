@@ -9,6 +9,7 @@
     width: 47%;
     text-align: center;
   }
+
   &__video {
     width: 100%;
     max-height: 100%;
@@ -29,12 +30,12 @@
     width: 61px;
     height: 61px;
     border-radius: 50%;
-    @include flex-block;  
+    @include flex-block;
     margin-bottom: 37px;
   }
 
   &__play-button:hover {
-   box-shadow: 0 0 27px $playBtnHover;
+    box-shadow: 0 0 27px $playBtnHover;
   }
 
   &__play-icon {
@@ -49,7 +50,7 @@
 
   &__notice {
     color: $whiteColor;
-    font-size: 14px;    
+    font-size: 14px;
   }
 
 

@@ -14,17 +14,19 @@
 
     &__title:not(:last-child) {
         margin-bottom: 36px;
-    } 
+    }
+
     &__dotts {
         color: $coralColor;
     }
-    &__description {}
 
     &__paragraph {
         color: $blackColor;
         opacity: 0.65;
     }
+
     &__paragraph:not(:last-child) {
         margin-bottom: 30px;
     }
+
 }

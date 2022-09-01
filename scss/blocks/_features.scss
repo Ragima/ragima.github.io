@@ -1,0 +1,17 @@
+.features {
+  padding: 135px 10%;
+  background: url(../../images/bg/bgfeatures-coffee.png) 95% 100% no-repeat,
+    url(../../images/bg/bgfeatures-earphones.png) 95% 0 no-repeat,
+    url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
+  background-color: $lightGreyColor;
+
+  &__features-list {
+    @include flex-block(row, center, center);
+    margin: 91px 0 70px 0;
+
+  }
+
+  &__feature:not(:last-child) {
+    margin-right: 46px;
+  }
+}

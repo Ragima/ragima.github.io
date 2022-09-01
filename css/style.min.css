@@ -42,6 +42,10 @@ button {
   cursor: pointer;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .button {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -143,13 +147,50 @@ button {
   justify-content: space-between;
 }
 .platforms__general-info {
-  padding: 7% 8%;
+  padding: 6% 10%;
   width: 40%;
 }
 .platforms__rectangle-banner {
   display: flex;
   height: 560px;
   width: auto;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 342px;
+}
+.feature__icon {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 30px;
+}
+.feature__title {
+  font-size: 22px;
+  margin-bottom: 19px;
+}
+.feature__description {
+  color: #282828;
+  opacity: 0.65;
+}
+
+.features {
+  padding: 135px 10%;
+  background: url(../../images/bg/bgfeatures-coffee.png) 95% 100% no-repeat, url(../../images/bg/bgfeatures-earphones.png) 95% 0 no-repeat, url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
+  background-color: #f6f5f3;
+}
+.features__features-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 91px 0 70px 0;
+}
+.features__feature:not(:last-child) {
+  margin-right: 46px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
