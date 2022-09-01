@@ -1,0 +1,13 @@
+.responsive-design {
+    display: flex;
+    background: url('../../images/bg/bgdescription.png') no-repeat;
+    padding: 6% 3%;
+    width: 100%;
+
+  &__desctop-banner {
+  }  
+  &__general-info {
+    width: 32%;
+    padding: 2% 10% 0% 3%;
+  }   
+}

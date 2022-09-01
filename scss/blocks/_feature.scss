@@ -1,7 +1,6 @@
 .feature {
-    @include flex-block(column, center, center);
-    max-width: 342px;
-
+    @include flex-block(column, center,center);
+    flex: 0.33;
     &__icon {
         width: 65px;
         height: 65px;
@@ -18,3 +17,4 @@
         opacity: 0.65;
     }
 }
+
