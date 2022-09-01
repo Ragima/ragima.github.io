@@ -1,0 +1,14 @@
+.button {
+    text-transform: uppercase;
+    color: $whiteColor;
+    padding: 17px 55px;
+    background-color: $coralColor; 
+    border-radius: 5px;   
+    font-size: 16px;  
+    letter-spacing: 1px; 
+}
+
+.button:hover {
+  cursor :pointer;
+  box-shadow: 0 0 27px rgba(255, 109, 109, 0.8);
+}
