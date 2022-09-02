@@ -38,11 +38,18 @@
     color: $smallTextGreyColor;
     text-align: center;
     margin-top: 50px;
+
   }
 
   &__notice-underline {
     text-decoration: underline;
+    margin-left: 4px;
+    &:hover {
+      color: $whiteColor;
+    }
   }
+
+
 
   &__button {
     padding: 16.5px 93px;

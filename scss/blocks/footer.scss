@@ -1,0 +1,54 @@
+.footer {
+    background: url('../../images/bg/bgfooter.png') center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top right;
+
+    &__container {
+        @include flex-block (row, start, start);
+        padding: 6% 10%;
+    }
+
+    &__contact {
+        max-width: 20%;
+        padding-right: 44px;
+    }
+
+    &__support,
+    &__about {
+        padding: 0px 44px;
+    }
+
+    &__newsletter {
+        padding-left: 44px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+    }
+
+    &__input {
+        background-color: $footerInputColor;
+        border: 1.5px solid $boldTextGreyColor;
+        margin: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+
+        &::placeholder {
+            color: $smallTextGreyColor;
+        }
+    }
+
+    &__button {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: 1px 1.2px 0.8px 0.5px rgb(185, 182, 182);
+    }
+
+    &__social-icons {
+        margin-top: 20px;
+    }
+}
