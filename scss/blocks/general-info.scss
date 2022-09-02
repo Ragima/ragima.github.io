@@ -29,5 +29,8 @@
     &__paragraph:not(:last-child) {
         margin-bottom: 30px;
     }
-
+    
+    &__title_white {
+        color: $whiteColor;
+    }
 }

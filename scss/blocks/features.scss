@@ -5,16 +5,19 @@
     url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
   background-color: $lightGreyColor;
 
+  &__general-info {
+    text-align: center;
+  }
+
+
   &__features-list {
     @include flex-block(row,space-between, center);  
-    
-    
-
     flex-wrap: wrap;
     margin: 91px 0 70px 0;
   }
 
   &__feature {
     margin-right: 46px;
+    text-align: center;
   }
 }

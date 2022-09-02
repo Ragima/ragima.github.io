@@ -1,6 +1,7 @@
 .feature {
     @include flex-block(column, center,center);
     flex: 0.30;
+    // width: 320px;
     &__icon {
         width: 65px;
         height: 65px;

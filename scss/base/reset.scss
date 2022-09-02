@@ -30,3 +30,11 @@
       height: 100%;
       width: 100%;
   }
+
+  input {
+    border: none; 
+  }
+  
+  input:focus {
+    outline: none 
+  }

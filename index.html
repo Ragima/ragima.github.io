@@ -12,7 +12,7 @@
 <body>
     <main>
         <section class="hero-banner" id="hero-banner">
-            <video loop class="hero-banner__video" id="hero-banner-video">
+            <video class="hero-banner__video" id="hero-banner-video" loop>
                 <source src="./video/video1_1.mp4" type="video/mp4">
             </video>
             <div class="hero-banner__container" id="hero-banner__container">
@@ -47,19 +47,18 @@
             </div>
         </section>
         <section class="features">
-            <div class="general-info text-center">
+            <div class="general-info features__general-info">
                 <h4 class="general-info__subtitle">New Features</h4>
                 <h2 class="general-info__title">Some awesone features</h2>
             </div>
             <div class="features__features-list">
-
-                <div class="feature features__feature text-center">
+                <div class="feature features__feature">
                     <img class="feature__icon" src="./images/icons/features-ico1.png" alt="feature" />
                     <h5 class="feature__title">Some awesome feature</h5>
                     <p class="feature__description">Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
                         Nulla vitae elit libero, a pharetra augue.Nulla vitae elit libero, a pharetra augue.</p>
                 </div>
-                <div class="feature features__feature text-center">
+                <div class="feature features__feature">
                     <img class="feature__icon" src="./images/icons/features-ico2.png" alt="feature" />
                     <h5 class="feature__title">Some awesome feature</h5>
                     <p class="feature__description">Donec sed odio yu tiurtpepepedui. Lored hjjy Nulla vitae elit
@@ -67,7 +66,7 @@
                         bibendum nulla sed consectetur.
                         Nulla vitae elit libero, a Nulla vitae elit libero, a pharetra augue.pharetra augue.</p>
                 </div>
-                <div class="feature features__feature text-center">
+                <div class="feature features__feature">
                     <img class="feature__icon" src="./images/icons/features-ico3.png" alt="feature" />
                     <h5 class="feature__title">Some awesome feature</h5>
                     <p class="feature__description">Donec yuyuyu sed odio dui. Aenean lacinia bibendum nulla sed
@@ -94,7 +93,7 @@
         </section>
         <section class="team">
             <div class="team__team-list">
-                <div class="team-member text-center">
+                <div class="team-member team__team-member">
                     <div class="team-member__photo">
                         <img src="./images/team1.jpg" />
                     </div>
@@ -103,7 +102,7 @@
                     <div class="team-member__job-description">“Aenean eu leo quam. Pellentesque ornare sem lacinia quam
                         venenatis vestibulum. Donec id gravida at eget metus. Etiasem malesuada magn”</div>
                 </div>
-                <div class="team-member text-center">
+                <div class="team-member team__team-member">
                     <div class="team-member__photo">
                         <img src="./images/team2.jpg" />
                     </div>
@@ -113,7 +112,7 @@
                         mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn”
                     </div>
                 </div>
-                <div class="team-member text-center">
+                <div class="team-member team__team-member">
                     <div class="team-member__photo">
                         <img src="./images//team3.jpg" />
                     </div>
@@ -143,7 +142,7 @@
             </div>
         </section>
         <section class="browser-features">
-            <div class="general-info browser-features__general-info text-center">
+            <div class="general-info browser-features__general-info">
                 <h4 class="general-info__subtitle">New features</h4>
                 <h2 class="general-info__title">Some awesone features</h2>
                 <div class="general-info__description">
@@ -157,6 +156,27 @@
             <div class="browser-features__banner">
                 <img src="./images/browser.png" alt="browser" />
             </div>
+        </section>
+        <section class="designers">
+            <div class="general-info designers__general-info">
+                <h4 class="general-info__subtitle">New features</h4>
+                <h2 class="general-info__title general-info__title_white">Over 1000 designers are using ...</h2>
+            </div>
+            <div class="designers__inputs">
+                <input type="text" class="input" placeholder="Full name"></input>
+                <input type="text" class="input" placeholder="Your email"></input>
+                <input type="text" class="input" placeholder="Password"></input>
+                <div class="designers__prompt-button">
+                    <div class="designers__prompt-notice">
+                        <img class="designers__prompt-arrow" src="./images/icons/arrow.png" alt="arrow" />
+                        <p class="designers__prompt-text">30 days free trial for all.</p>
+                    </div>
+                    <button class="button designers__button">Try now</button>
+                </div>
+            </div>
+            </div>
+            <p class="designers__notice"> By Signing up you agree to our <span class="designers__notice-underline">terms
+                    & Services.</span></p>
         </section>
     </main>
     <script src="script/script.js"></script>

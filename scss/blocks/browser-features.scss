@@ -1,9 +1,10 @@
 .browser-features {
-    padding: 6% 10%;
+    padding-top: 6%;
     @include flex-block (column, center, center);
 
     &__general-info {
-        width: 48%;
+        width: 40%;
         margin-bottom: 105px;
+        text-align: center;
     }
 }

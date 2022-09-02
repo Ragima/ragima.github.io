@@ -32,6 +32,14 @@ body {
   width: 100%;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 body {
   font-family: "Exo 2";
   font-size: 16px;
@@ -49,10 +57,10 @@ button {
 .button {
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 17px 55px;
   background-color: #FB8686;
   border-radius: 5px;
   font-size: 16px;
+  padding: 17px 55px;
   letter-spacing: 1px;
 }
 
@@ -91,7 +99,7 @@ button {
   margin-bottom: 41px;
 }
 .hero-banner__play-button {
-  background-color: #323969;
+  background-color: rgb(50, 57, 105);
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -141,6 +149,9 @@ button {
 .general-info__paragraph:not(:last-child) {
   margin-bottom: 30px;
 }
+.general-info__title_white {
+  color: #FFFFFF;
+}
 
 .platforms {
   display: flex;
@@ -184,6 +195,9 @@ button {
   background: url(../../images/bg/bgfeatures-coffee.png) 95% 100% no-repeat, url(../../images/bg/bgfeatures-earphones.png) 95% 0 no-repeat, url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
   background-color: #f6f5f3;
 }
+.features__general-info {
+  text-align: center;
+}
 .features__features-list {
   display: flex;
   flex-direction: row;
@@ -194,12 +208,13 @@ button {
 }
 .features__feature {
   margin-right: 46px;
+  text-align: center;
 }
 
 .responsive-design {
   display: flex;
   background: url("../../images/bg/bgdescription.png") no-repeat;
-  padding: 6% 3%;
+  padding: 5% 3%;
   width: 100%;
 }
 .responsive-design__general-info {
@@ -208,7 +223,7 @@ button {
 }
 
 .team-member {
-  width: 28%;
+  min-width: 28%;
 }
 .team-member__photo {
   margin: 0 auto;
@@ -238,7 +253,7 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  padding: 6% 0%;
+  padding: 0% 0% 7% 0%;
 }
 
 .team {
@@ -254,17 +269,89 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.team__team-member {
+  text-align: center;
+}
 
 .browser-features {
-  padding: 6% 10%;
+  padding-top: 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .browser-features__general-info {
-  width: 48%;
+  width: 40%;
   margin-bottom: 105px;
+  text-align: center;
+}
+
+.input {
+  background-color: #464C77;
+  border: 2px solid #999CB4;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 28px;
+  margin: 0px 10px;
+  color: #F6F5F3;
+}
+.input:focus {
+  border-color: #FF6D6D;
+}
+.input::placeholder {
+  color: #F6F5F3;
+  opacity: 0.51;
+}
+
+.designers {
+  background-color: rgb(50, 57, 105);
+  padding: 95px 0px 80px;
+}
+.designers__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.designers__general-info {
+  margin-bottom: 64px;
+  text-align: center;
+}
+.designers__prompt-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.designers__prompt-arrow {
+  margin-top: 10px;
+}
+.designers__prompt-notice {
+  display: flex;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.designers__prompt-text {
+  color: #F6F5F3;
+  display: inline;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.designers__notice {
+  color: #8A8A8A;
+  text-align: center;
+  margin-top: 50px;
+}
+.designers__notice-underline {
+  text-decoration: underline;
+}
+.designers__button {
+  padding: 16.5px 93px;
+  z-index: 5;
+  box-shadow: 1px 1px 1px 1.7px rgba(13, 11, 46, 0.2);
 }
 
 /*# sourceMappingURL=style.min.css.map */
