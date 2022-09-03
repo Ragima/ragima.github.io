@@ -24,7 +24,7 @@
                 <p class="hero-banner__notice">* No need to add cards details</p>
             </div>
         </section>
-        <section class="platforms">
+         <section class="platforms">
             <div class="general-info platforms__general-info">
                 <h4 class="general-info__subtitle">New design</h4>
                 <h2 class="general-info__title">There is no other platforms for you as like <span
@@ -42,9 +42,7 @@
                     </p>
                 </div>
             </div>
-            <div class="platforms__rectangle-banner">
-                <img src="./images/bg/bgintro.jpg" alt="banner-rectangle" />
-            </div>
+                <img  class="platforms__rectangle-banner" src="./images/bg/bgintro.jpg" alt="banner-rectangle" />
         </section>
         <section class="features">
             <div class="general-info features__general-info">
@@ -75,22 +73,24 @@
                 </div>
             </div>
         </section>
-        <section class="responsive-design">
-            <div class="responsive-design__desctop-banner">
-                <img src="./images/macbook.png" alt="macbook" />
-            </div>
-            <div class="general-info responsive-design__general-info">
-                <h4 class="general-info__subtitle">New design</h4>
-                <h2 class="general-info__title">Resposive design, just need your tap <span
-                        class="general-info__dotts">....</span></h2>
-                <div class="general-info__description">
-                    <p class="general-info__paragraph">
-                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                        Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
-                        Etiasem malesuada magn. Vestibulum felis euismod semper.
-                    </p>
+             <!-- <section class="responsive-design">   
+                <div class="responsive-design__container">
+                    <img class="responsive-design__desctop-banner" src="./images/macbook.png" alt="macbook" />
+                    <div class="general-info responsive-design__general-info">
+                    <h4 class="general-info__subtitle">New design</h4>
+                    <h2 class="general-info__title">Resposive design, just need your tap <span
+                            class="general-info__dotts">....</span></h2>
+                    <div class="general-info__description">
+                        <p class="general-info__paragraph">
+                            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                            Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+                            Etiasem malesuada magn. Vestibulum felis euismod semper.
+                        </p>
+                    </div>
                 </div>
-        </section>
+        </section>  -->
+
+
         <section class="team">
             <div class="team__team-list">
                 <div class="team-member team__team-member">
@@ -123,22 +123,12 @@
                         Etiasem malesuada magn”</div>
                 </div>
             </div>
-            <div class="partners">
-                <div class="partners__logo">
-                    <img src="./images/logo/partner1.png" alt="partner" />
-                </div>
-                <div class="partners__logo">
-                    <img src="./images/logo/partner2.png" alt="partner" />
-                </div>
-                <div class="partners__logo">
-                    <img src="./images/logo/partner3.png" alt="partner" />
-                </div>
-                <div class="partners__logo">
-                    <img src="./images/logo/partner4.png" alt="partner" />
-                </div>
-                <div class="partners__logo">
-                    <img src="./images/logo/partner5.png" alt="partner" />
-                </div>
+            <div class="partners">             
+                    <img  class="partners__logo" src="./images/logo/partner1.png" alt="partner" />   
+                    <img  class="partners__logo" src="./images/logo/partner2.png" alt="partner" />
+                    <img  class="partners__logo" src="./images/logo/partner3.png" alt="partner" />
+                    <img  class="partners__logo" src="./images/logo/partner4.png" alt="partner" />
+                    <img  class="partners__logo" src="./images/logo/partner5.png" alt="partner" />
             </div>
         </section>
         <section class="browser-features">
@@ -152,20 +142,18 @@
                         Vestibulum felis euismod semper.
                     </p>
                 </div>
-            </div>
-            <div class="browser-features__banner">
-                <img src="./images/browser.png" alt="browser" />
-            </div>
-        </section>
+            </div>           
+                <img class="browser-features__banner" src="./images/browser.png" alt="browser" />
+        </section> 
         <section class="designers">
             <div class="general-info designers__general-info">
                 <h4 class="general-info__subtitle">New features</h4>
                 <h2 class="general-info__title general-info__title_white">Over 1000 designers are using ...</h2>
             </div>
             <div class="designers__inputs">
-                <input type="text" class="input" placeholder="Full name" />
-                <input type="text" class="input" placeholder="Your email" />
-                <input type="text" class="input" placeholder="Password" />
+                <input type="text" class="input designers__input" placeholder="Full name" />
+                <input type="text" class="input designers__input" placeholder="Your email" />
+                <input type="text" class="input designers__input" placeholder="Password" />
                 <div class="designers__prompt-button">
                     <div class="designers__prompt-notice">
                         <img class="designers__prompt-arrow" src="./images/icons/arrow.png" alt="arrow" />
@@ -203,7 +191,9 @@
                     <h5 class="info-column__title">Get Newsletter</h5>
                     <div class="footer__input-wrapper">
                         <input type="text" class="input footer__input" placeholder="EMAIL" />
-                        <button class="button footer__button" />
+                        <button class="button footer__button">
+                            <img  class="footer__send-icon" src="./images/letter.png" alt="send" />
+                        </button>
                     </div>
                     <div class="footer__social-icons social-media">
                         <img class="social-media__icon" src="./images/social/facebook.png" alt="facebook"/>
@@ -213,7 +203,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> 
     </main>
     <script src="script/script.js"></script>
 </body>

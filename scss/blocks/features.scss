@@ -11,13 +11,31 @@
 
 
   &__features-list {
-    @include flex-block(row,space-between, center);  
+    @include flex-block(row, space-around, flex-start);
     flex-wrap: wrap;
     margin: 91px 0 70px 0;
   }
 
   &__feature {
-    margin-right: 46px;
+    margin: 30px 34px;
     text-align: center;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 992px) {
+    background: $lightGreyColor;
+    padding: 9% 3%;
+
+    &__features-list {
+      margin: 40px 0px 0px;
+    }
+
+    &__feature:first-child {
+      // margin-top: 0px;
+    }
+
+    &__feature:last-child {
+      // margin-bottom: 0px;
+    }
   }
 }

@@ -6,21 +6,17 @@
 
     &__container {
         @include flex-block (row, start, start);
+        flex-wrap: wrap;
+        gap: 40px;
         padding: 6% 10%;
     }
 
-    &__contact {
-        max-width: 20%;
-        padding-right: 44px;
-    }
-
     &__support,
-    &__about {
-        padding: 0px 44px;
-    }
-
+    &__about,
+    &__contact,
     &__newsletter {
-        padding-left: 44px;
+        padding: 0px 40px;
+        max-width: 230px;
     }
 
     &__input-wrapper {
@@ -33,6 +29,8 @@
         margin: 0;
         border-bottom-right-radius: 0;
         border-top-right-radius: 0;
+        color: $boldTextGreyColor;
+        width: 100%;
 
         &::placeholder {
             color: $smallTextGreyColor;
@@ -40,15 +38,37 @@
     }
 
     &__button {
-        width: 52px;
+        width: 92px;
         height: 52px;
         padding: 0;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         box-shadow: 1px 1.2px 0.8px 0.5px rgb(185, 182, 182);
+        @include flex-block;
     }
 
     &__social-icons {
         margin-top: 20px;
+    }
+
+    &__send-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background: $whiteColor;
+
+        &__container {
+            gap: 10px;
+            @include flex-block (column, center, center);
+        }
+
+        &__support,
+        &__about,
+        &__contact,
+        &__newsletter {
+            padding: 0px;
+        }
     }
 }

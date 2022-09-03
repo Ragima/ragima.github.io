@@ -1,5 +1,6 @@
 .platforms {
     @include flex-block(row, space-between, null);
+    position: relative;
 
     &__general-info {
         padding: 6% 10%;
@@ -8,7 +9,30 @@
 
     &__rectangle-banner {
         display: flex;
-        height: 560px;
-        width: auto;
+        min-height: 560px;
+        width: 30%;
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        @include flex-block;
+
+        &__rectangle-banner {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+        }
+
+        &__general-info {
+            padding: 5% 4%;
+            width: 78%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__general-info {
+            padding: 9% 4%;
+        }
     }
 }

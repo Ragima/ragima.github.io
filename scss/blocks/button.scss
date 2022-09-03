@@ -1,14 +1,17 @@
 .button {
-    text-transform: uppercase;
-    color: $whiteColor;
-    background-color: $coralColor; 
-    border-radius: 5px;   
-    font-size: 16px;  
-    padding: 17px 55px;
-    letter-spacing: 1px; 
+  text-transform: uppercase;
+  color: $whiteColor;
+  background-color: $coralColor;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: hover 0.5s ease-in-out;
+  width: 270px;
+  height: 52px;
+  box-sizing: border-box;
 }
 
 .button:hover {
-  cursor :pointer;
+  cursor: pointer;
   box-shadow: 0 0 27px $tryBtnHover;
 }

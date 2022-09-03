@@ -1,13 +1,74 @@
+// .responsive-design {
+//  
+//   background: url('../../images/bg/bgdescription.png') no-repeat;
+//   padding: 6% 10%;
+  
+//   &__general-info {
+//     width: 39%;
+//     padding: 2% 0% 0% 5%;
+//   }
+
+//   &__desctop-banner {
+//     display: flex;
+//     width: 45%;    
+//   }
+  
+//   @media screen and (max-width: 1200px) {
+//     padding:0;
+//     background-size: 100%;
+//     position: relative;
+//     display: flex;
+//     height: 100%;
+//       &__desctop-banner {
+//         visibility: hidden;
+//       }
+   
+//       &__general-info {
+//         width: 100%;
+//         position: absolute;
+//         text-align: center;
+//         @include flex-block (column)
+//         // top: 0;
+//         // left: 0;
+//       }
+//   }
+// }
 .responsive-design {
-  display: flex;
-  background: url('../../images/bg/bgdescription.png') no-repeat;
-  padding: 5% 3%;
-  width: 100%;
+    background: url('../../images/bg/bgdescription.png') no-repeat;
+    
 
-  &__desctop-banner {}
+    &__container {
+     @include flex-block(row, space-between, center);
+      padding: 6% 7%;
+    }
 
-  &__general-info {
-    width: 32%;
-    padding: 2% 10% 0% 3%;
-  }
+    &__general-info {
+      margin-left: 3%;
+      padding-right: 5%;
+      flex: 1;
+    }
+
+    &____desctop-banner {
+      // flex: 0.85;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 1200px) {
+      background: $whiteColor;
+      &__container {
+        @include flex-block(column);
+      }
+
+      &____desctop-banner {
+       
+      }
+
+    &__general-info {
+      margin-top: 40px;
+      padding: 0;
+      text-align: center;
+    }
+     
+    }
 }

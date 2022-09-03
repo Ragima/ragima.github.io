@@ -1,10 +1,12 @@
 .designers {
   background-color: $darkBlueColor;
-  padding: 95px 0px 80px;
+  padding: 95px 40px 80px;
 
   &__inputs {
     width: 100%;
     @include flex-block(row, center, flex-end);
+    flex-wrap: wrap;
+    gap: 20px 15px;
   }
 
   &__general-info {
@@ -24,7 +26,6 @@
   &__prompt-notice {
     display: flex;
     padding-bottom: 15px;
-    width: 100%;
   }
 
   &__prompt-text {
@@ -38,22 +39,27 @@
     color: $smallTextGreyColor;
     text-align: center;
     margin-top: 50px;
+    width: 100%;
 
+  }
+
+  &__button {
+    max-width: 267px;
   }
 
   &__notice-underline {
     text-decoration: underline;
     margin-left: 4px;
+    transition: 0.5s ease-in-out;
+
     &:hover {
       color: $whiteColor;
     }
   }
-
-
-
-  &__button {
-    padding: 16.5px 93px;
-    z-index: 5;
-    box-shadow: 1px 1px 1px 1.7px $buttonBoxShadowColor;
+  
+  @media screen and (max-width: 768px) {
+    &__inputs {
+      gap: 20px 15px;
+    }
   }
 }

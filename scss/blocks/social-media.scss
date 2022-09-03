@@ -1,8 +1,14 @@
 .social-media {
-margin: 0 auto;
+    margin: 0 auto;
 
     &__icon {
-       width: 28px;
-       margin: 0px 10px;
+        width: 28px;
+        margin: 0px 10px;
+        cursor: pointer;
+        transition: 0.1s linear;
+    }
+
+    &__icon:hover {
+        transform: translateY(-2.2px);
     }
 }
