@@ -2,7 +2,6 @@
   @include flex-block;
   height: 100vh;
 
-
   &__container {
     position: absolute;
     @include flex-block(column);
@@ -14,7 +13,6 @@
   &__video {
     object-fit: cover;
     position: absolute;
-    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;

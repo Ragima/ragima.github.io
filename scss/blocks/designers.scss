@@ -56,8 +56,9 @@
       color: $whiteColor;
     }
   }
-  
+
   @media screen and (max-width: 768px) {
+    padding: 9% 6%;
     &__inputs {
       gap: 20px 15px;
     }

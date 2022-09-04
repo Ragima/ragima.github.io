@@ -1,5 +1,5 @@
 .platforms {
-    @include flex-block(row, space-between, null);
+    @include flex-block(row, space-between);
     position: relative;
 
     &__general-info {

@@ -1,6 +1,6 @@
 .partners {
     margin: 0 auto;
-    @include flex-block(row, center, center);
+    @include flex-block;
     padding: 8% 0%;
     flex-wrap: wrap;
     gap: 40px;

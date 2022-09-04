@@ -1,5 +1,5 @@
 .feature {
-    @include flex-block(column, center, center);
+    @include flex-block(column);
     max-width: 320px;
     transition: 0.5s ease-in-out;
 

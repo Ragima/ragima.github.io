@@ -4,11 +4,13 @@
     width: 100%;
     background-position: top right;
 
+
     &__container {
-        @include flex-block (row, start, start);
+        @include flex-block (row, center, start);
         flex-wrap: wrap;
         gap: 40px;
         padding: 6% 10%;
+        width: 80%;
     }
 
     &__support,
@@ -61,7 +63,9 @@
 
         &__container {
             gap: 10px;
+            padding: 9% 6%;
             @include flex-block (column, center, center);
+            flex-wrap: wrap;
         }
 
         &__support,
