@@ -19,6 +19,10 @@
         opacity: 0.65;
         line-height: 1.5rem;
     }
+    
+    &_text-center {
+        text-align: center;
+    }
 
     &:hover {
         transform: scale(1.1, 1.1);

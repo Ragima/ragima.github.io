@@ -65,10 +65,21 @@ button {
   height: 52px;
   box-sizing: border-box;
 }
-
 .button:hover {
   cursor: pointer;
   box-shadow: 0 0 27px rgba(255, 109, 109, 0.8);
+}
+.button_small {
+  width: 92px;
+  height: 52px;
+  padding: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 1px 1.2px 0.8px 0.5px rgb(185, 182, 182);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-banner {
@@ -180,6 +191,9 @@ button {
 .general-info__title_white {
   color: #ffffff;
 }
+.general-info_text-center {
+  text-align: center;
+}
 
 .platforms {
   display: flex;
@@ -243,6 +257,9 @@ button {
   opacity: 0.65;
   line-height: 1.5rem;
 }
+.feature_text-center {
+  text-align: center;
+}
 .feature:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
@@ -252,9 +269,6 @@ button {
   padding: 6% 10%;
   background: url(../../images/bg/bgfeatures-coffee.png) 95% 100% no-repeat, url(../../images/bg/bgfeatures-earphones.png) 95% 0 no-repeat, url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
   background-color: #f6f5f3;
-}
-.features__general-info {
-  text-align: center;
 }
 .features__features-list {
   display: flex;
@@ -266,7 +280,6 @@ button {
 }
 .features__feature {
   margin: 30px 34px;
-  text-align: center;
   height: 100%;
 }
 @media screen and (max-width: 992px) {
@@ -317,7 +330,6 @@ button {
   .responsive-design__general-info {
     margin-top: 40px;
     padding: 0;
-    text-align: center;
   }
 }
 @media screen and (max-width: 1200px) and (max-width: 768px) {
@@ -332,6 +344,7 @@ button {
 .team-member {
   transition: 0.5s ease-in-out;
   padding: 0px 20px;
+  text-align: center;
 }
 .team-member__photo {
   margin: 0 auto;
@@ -398,7 +411,6 @@ button {
   gap: 40px;
 }
 .team__team-member {
-  text-align: center;
   margin-top: 60px;
   flex: 0 1 300px;
 }
@@ -413,7 +425,6 @@ button {
 .browser-features__general-info {
   width: 40%;
   margin-bottom: 105px;
-  text-align: center;
 }
 .browser-features__banner {
   width: 100%;
@@ -452,6 +463,18 @@ button {
   color: #F6F5F3;
   opacity: 0.51;
 }
+.input_small {
+  background-color: #F6F6F6;
+  border: 1.5px solid #A6A7AA;
+  margin: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  color: #A6A7AA;
+  width: 100%;
+}
+.input_small::placeholder {
+  color: #8A8A8A;
+}
 
 .designers {
   background-color: rgb(50, 57, 105);
@@ -468,7 +491,6 @@ button {
 }
 .designers__general-info {
   margin-bottom: 64px;
-  text-align: center;
 }
 .designers__prompt-button {
   display: flex;
@@ -591,30 +613,6 @@ button {
 }
 .footer__input-wrapper {
   display: flex;
-}
-.footer__input {
-  background-color: #F6F6F6;
-  border: 1.5px solid #A6A7AA;
-  margin: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  color: #A6A7AA;
-  width: 100%;
-}
-.footer__input::placeholder {
-  color: #8A8A8A;
-}
-.footer__button {
-  width: 92px;
-  height: 52px;
-  padding: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: 1px 1.2px 0.8px 0.5px rgb(185, 182, 182);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 .footer__social-icons {
   margin-top: 20px;

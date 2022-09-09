@@ -23,31 +23,7 @@
 
     &__input-wrapper {
         display: flex;
-    }
-
-    &__input {
-        background-color: $footerInputColor;
-        border: 1.5px solid $boldTextGreyColor;
-        margin: 0;
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-        color: $boldTextGreyColor;
-        width: 100%;
-
-        &::placeholder {
-            color: $smallTextGreyColor;
-        }
-    }
-
-    &__button {
-        width: 92px;
-        height: 52px;
-        padding: 0;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        box-shadow: 1px 1.2px 0.8px 0.5px rgb(185, 182, 182);
-        @include flex-block;
-    }
+    }   
 
     &__social-icons {
         margin-top: 20px;

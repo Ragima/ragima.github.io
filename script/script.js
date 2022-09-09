@@ -1,11 +1,11 @@
 
-let video = document.getElementById("hero-banner-video");
+let video = document.querySelector("#hero-banner-video");
 
-let playButton = document.getElementById("hero-banner__play-button");
+let playButton = document.querySelector("#hero-banner__play-button");
 
-let bannerContainer = document.getElementById("hero-banner__container");
+let bannerContainer = document.querySelector("#hero-banner__container");
 
-let heroBanner = document.getElementById("hero-banner");
+let heroBanner = document.querySelector("#hero-banner");
 
 heroBanner.addEventListener("click", () => {
     onVideoPlay();
