@@ -1,0 +1,54 @@
+.footer {
+    background: url('../../images/bg/bgfooter.png') center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: top right;
+
+
+    &__container {
+        @include flex-block (row, center, start);
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 6% 10%;
+        width: 80%;
+    }
+
+    &__support,
+    &__about,
+    &__contact,
+    &__newsletter {
+        padding: 0px 40px;
+        max-width: 230px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+    }   
+
+    &__social-icons {
+        margin-top: 20px;
+    }
+
+    &__send-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background: $whiteColor;
+
+        &__container {
+            gap: 10px;
+            padding: 9% 6%;
+            @include flex-block (column, center, center);
+            flex-wrap: wrap;
+        }
+
+        &__support,
+        &__about,
+        &__contact,
+        &__newsletter {
+            padding: 0px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.responsive-design {
+  background: url('../../images/bg/bgdescription.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 6% 7%;
+
+  &__container {
+    @include flex-block(row, space-between, center);
+  }
+
+  &__general-info {
+    margin-left: 3%;
+    padding-right: 5%;
+    flex: 1;
+  }
+
+  &__desctop-banner {
+    max-width: 100%;
+    height: 450px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    background: $whiteColor;
+
+    &__container {
+      @include flex-block(column);
+    }
+
+    &__general-info {
+      margin-top: 40px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      &__container {
+        padding: 9% 6%;
+      }
+
+      &__desctop-banner {
+        height: auto;
+      }
+    }
+  }
+}

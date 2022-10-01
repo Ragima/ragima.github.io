@@ -1,0 +1,30 @@
+.features {
+  padding: 6% 10%;
+  background: url(../../images/bg/bgfeatures-coffee.png) 95% 100% no-repeat,
+    url(../../images/bg/bgfeatures-earphones.png) 95% 0 no-repeat,
+    url(../../images/bg/bgfeatures-pens.png) 5% 0 no-repeat;
+  background-color: $lightGreyColor;
+
+  &__features-list {
+    @include flex-block(row, space-around, flex-start);
+    flex-wrap: wrap;
+    margin: 91px 0 70px 0;
+  }
+
+  &__feature {
+    margin: 30px 34px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 992px) {
+    background: $lightGreyColor;
+    padding: 9% 7%;
+
+    &__features-list {
+      margin: 40px 0px 0px;
+    }
+    &__feature {
+      margin: 17px 7px;
+    }
+  }
+}

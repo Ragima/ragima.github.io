@@ -1,0 +1,25 @@
+.partners {
+    margin: 0 auto;
+    @include flex-block;
+    padding: 8% 0%;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &__logo {
+        transition: 0.5s ease-in-out;
+
+    }
+
+    &__logo:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 20% 5% 15%;
+
+        &__logo {
+            width: 90px;
+        }
+    }
+}

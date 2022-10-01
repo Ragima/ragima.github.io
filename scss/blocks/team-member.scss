@@ -1,0 +1,34 @@
+.team-member {
+    transition: 0.5s ease-in-out;
+    padding: 0px 20px;
+    text-align: center;
+
+    &__photo {
+        margin: 0 auto;
+        display: flex;
+        width: 78px;
+        height: 80px;
+    }
+
+    &__name {
+        color: $whiteColor;
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    &__position {
+        color: $darkCoralColor;
+        margin-top: 5px;
+    }
+
+    &__job-description {
+        color: $whiteColor;
+        opacity: 0.65;
+        margin-top: 25px;
+    }
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
+}

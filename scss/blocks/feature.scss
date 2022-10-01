@@ -1,0 +1,31 @@
+.feature {
+    @include flex-block(column);
+    max-width: 320px;
+    transition: 0.5s ease-in-out;
+
+    &__icon {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 22px;
+        margin-bottom: 19px;
+    }
+
+    &__description {
+        color: $blackColor;
+        opacity: 0.65;
+        line-height: 1.5rem;
+    }
+    
+    &_text-center {
+        text-align: center;
+    }
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
+}

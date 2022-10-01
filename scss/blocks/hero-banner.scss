@@ -1,0 +1,85 @@
+.hero-banner {
+  @include flex-block;
+  height: 100vh;
+
+  &__container {
+    position: absolute;
+    @include flex-block(column);
+    width: 47%;
+    max-height: 90%;
+    text-align: center;
+  }
+
+  &__video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__title {
+    color: $whiteColor;
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 100;
+    line-height: 75px;
+    margin-bottom: 41px;
+  }
+
+  &__play-button {
+    background-color: $darkBlueColor;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    @include flex-block;
+    margin-bottom: 37px;
+  }
+
+  &__play-button:hover {
+    box-shadow: 0 0 27px $playBtnHover;
+  }
+
+  &__play-icon {
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  &__button {
+    margin-bottom: 18px;
+  }
+
+  &__notice {
+    color: $whiteColor;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width:768px) {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__play-button {
+      margin-bottom: 42px;
+    }
+
+    &__video {
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width:614px) {
+    &__title {
+      font-size: 30px;
+      line-height: normal;
+    }
+
+    &__button {
+      padding: 15px 36px;
+      font-size: 14px;
+      max-width: 190px;
+    }
+  }
+}

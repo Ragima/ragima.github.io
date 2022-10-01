@@ -1,0 +1,33 @@
+.input {
+    background-color: $inputBGColor;
+    border: 2px solid $inputBorderColor;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px 28px;
+    margin: 0px 10px;
+    color: $bgGreyColor;
+
+    &:focus {
+        border-color: $darkCoralColor;
+    }
+
+    &::placeholder {
+        color: $bgGreyColor;
+        opacity: 0.51;
+    } 
+    
+    &_small {
+        background-color: $footerInputColor;
+        border: 1.5px solid $boldTextGreyColor;
+        margin: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        color: $boldTextGreyColor;
+        width: 100%;
+
+        &::placeholder {
+            color: $smallTextGreyColor;
+        } 
+    }
+}

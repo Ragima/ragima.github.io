@@ -1,0 +1,41 @@
+.info-column {
+    @include flex-block(column, center, flex-start);
+
+    &__text {
+        color: $blackColor;
+        opacity: 0.65;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    &__title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        color: $blackColor;
+        opacity: 0.65;
+        line-height: 1.5rem;
+        font-size: 14px;
+        transition: 0.5s linear;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 10px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
